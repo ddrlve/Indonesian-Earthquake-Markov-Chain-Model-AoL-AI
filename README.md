@@ -1,9 +1,9 @@
-# 🇮🇩 Advanced Markov Chain Earthquake Forecasting for Indonesia
+# Advanced Markov Chain Earthquake Forecasting for Indonesia
 
 **Probabilistic Earthquake Forecasting Using 2nd-Order Markov Chain Models**
 
-> 🔮 **Complete AI System for Earthquake Prediction & Comprehensive Analysis**  
-> 📊 **20,000+ Historical Earthquakes | 10+ Visualizations | IEEE Paper Ready**
+> **Complete AI System for Earthquake Prediction & Comprehensive Analysis**  
+> **20,000+ Historical Earthquakes | 10+ Visualizations | IEEE Paper Ready**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
@@ -11,65 +11,68 @@
 
 ---
 
-## 🚀 Quick Start (3 Minutes)
+## Quick Start (3 Minutes)
 
 ### Step 1: Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### Step 2: Open Notebook
+
 ```bash
 jupyter notebook Advanced_Markov_Chain_Earthquake_Forecasting.ipynb
 ```
 
 ### Step 3: Run All Cells
+
 - Click: `Cell` → `Run All`
 - Wait 2-3 minutes for complete execution
 - All predictions and visualizations will be generated automatically!
 
-**That's it!** 🎉 All results will be saved to `results/` folder.
+**That's it!** All results will be saved to `results/` folder.
 
 ---
 
-## 📋 Project Information
+## Project Information
 
 - **Institution:** Bina Nusantara University
 - **Course:** Artificial Intelligence (Semester 3)
 - **Assessment:** Assessment of Learning (AoL)
 - **Paper Title:** "Probabilistic Earthquake Forecasting Using Hidden Markov Models"
 - **Date:** December 2024
-- **Status:** ✅ **Complete & Ready for IEEE Submission**
+- **Status:** Complete & Ready for IEEE Submission
 - **Repository:** [GitHub](https://github.com/ddrlve/Indonesian-Earthquake-Markov-Chain-Model-AoL-AI)
 
 ---
 
-## 🎯 What This System Does
+## What This System Does
 
 **A comprehensive earthquake forecasting system for Indonesia using 2nd-Order Markov Chain models**
 
-### 🔮 Core Capabilities:
+### Core Capabilities:
 
-| Feature | Description | Output |
-|---------|-------------|--------|
-| 🔮 **Prediction** | Forecasts next earthquake | Location, magnitude, probability |
-| 🗺️ **Geographic Analysis** | Maps 20,000+ earthquakes | Heat map visualization |
-| 📊 **Regional Risk** | Identifies dangerous regions | Risk index & rankings |
-| ⏰ **Temporal Patterns** | Analyzes when earthquakes occur | Yearly, monthly, daily, hourly |
-| 📏 **Physical Analysis** | Studies magnitude-depth relationships | Gutenberg-Richter law |
-| 🎯 **Dashboard** | Interactive prediction visualization | 9-panel comprehensive view |
+| Feature               | Description                           | Output                           |
+| --------------------- | ------------------------------------- | -------------------------------- |
+| **Prediction**        | Forecasts next earthquake             | Location, magnitude, probability |
+| **Geographic Analysis** | Maps 20,000+ earthquakes            | Heat map visualization           |
+| **Regional Risk**     | Identifies dangerous regions          | Risk index & rankings            |
+| **Temporal Patterns** | Analyzes when earthquakes occur       | Yearly, monthly, daily, hourly   |
+| **Physical Analysis** | Studies magnitude-depth relationships | Gutenberg-Richter law            |
+| **Dashboard**         | Interactive prediction visualization  | 9-panel comprehensive view       |
 
-### ✅ Key Features:
+### Key Features:
 
-- ✨ **Predicts next earthquake** based on last 2 events (2nd-order Markov Chain)
-- 🎯 **Top 10 most likely scenarios** with probability scores
-- 🗺️ **9 major regions analyzed** (Aceh, Sumatra, Java, Sulawesi, Maluku, Papua, etc.)
-- 📈 **Scientific validation** with train/test split (80/20)
-- 🏆 **Performance:** 23.5% (1-day), 100% (5/10-day window)
+- **Predicts next earthquake** based on last 2 events (2nd-order Markov Chain)
+- **Top 10 most likely scenarios** with probability scores
+- **9 major regions analyzed** (Aceh, Sumatra, Java, Sulawesi, Maluku, Papua, etc.)
+- **Scientific validation** with train/test split (80/20)
+- **Performance:** 23.5% (1-day), 100% (5/10-day window)
 
 ---
 
-## 📊 Key Results
+## Key Results
 
 ### Data Statistics:
 
@@ -94,7 +97,7 @@ jupyter notebook Advanced_Markov_Chain_Earthquake_Forecasting.ipynb
 
 ---
 
-## 🎨 Visualizations Generated
+## Visualizations Generated
 
 The system generates **10 publication-quality figures** (300 DPI):
 
@@ -114,9 +117,9 @@ Plus:
 
 ---
 
-## 📖 How to Use (Step-by-Step)
+## How to Use (Step-by-Step)
 
-### 1️⃣ **Preparation**
+### 1. Preparation
 
 ```bash
 # Clone repository
@@ -127,91 +130,98 @@ cd Indonesian-Earthquake-Markov-Chain-Model-AoL-AI
 pip install -r requirements.txt
 ```
 
-### 2️⃣ **Open Notebook**
+### 2. Open Notebook
 
 ```bash
 jupyter notebook Advanced_Markov_Chain_Earthquake_Forecasting.ipynb
 ```
 
-### 3️⃣ **Run Analysis**
+### 3. Run Analysis
 
 **Option A: Run All Cells (Recommended)**
+
 - Click: `Cell` → `Run All`
 - Wait ~2-3 minutes
 - All results generated automatically!
 
 **Option B: Run Step-by-Step**
+
 1. **Data Loading** (Cells 1-5): Downloads & prepares 20,000 earthquakes
 2. **Feature Engineering** (Cells 6-10): Creates 135 state space
 3. **Model Training** (Cells 11-15): Trains Markov Chain
 4. **Predictions** (Cells 16-20): Forecasts next earthquake
 5. **Visualizations** (Cells 21-30): Generates 10+ charts
 
-### 4️⃣ **View Results**
+### 4. View Results
 
 All outputs saved to `results/` folder:
-- 📊 10+ high-resolution visualizations (PNG, 300 DPI)
-- 📄 IEEE paper report (TXT format)
-- 💾 Trained model (transition_matrix_order2.npy)
+
+- 10+ high-resolution visualizations (PNG, 300 DPI)
+- IEEE paper report (TXT format)
+- Trained model (transition_matrix_order2.npy)
 
 ---
 
-## 🎨 Understanding the Visualizations
+## Understanding the Visualizations
 
 ### 1. **Geographic Earthquake Map** (`indonesia_earthquake_map.png`)
+
 - **What it shows:** 20,000+ earthquakes plotted on Indonesia map
 - **How to read:** Red = high magnitude, Blue = low magnitude
 - **Key insight:** Identifies earthquake hotspots
 
 ### 2. **Regional Analysis** (`regional_earthquake_analysis.png`)
+
 - **4 panels:** Frequency, Magnitude, Major Quakes, Risk Index
 - **How to read:** Bar charts comparing 9 regions
 - **Key insight:** Which regions are most dangerous?
 
 ### 3. **Temporal Patterns** (`temporal_earthquake_analysis.png`)
+
 - **6 panels:** Yearly, Monthly, Daily, Hourly trends
 - **How to read:** Time series & heatmaps
 - **Key insight:** When do earthquakes occur most?
 
 ### 4. **Prediction Dashboard** (`earthquake_prediction_dashboard.png`)
+
 - **9 panels:** Comprehensive forecast visualization
 - **How to read:** Top predictions, probabilities, confidence intervals
 - **Key insight:** Next earthquake forecast with confidence scores
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-📂 Indonesian-Earthquake-Markov-Chain-Model-AoL-AI/
+Indonesian-Earthquake-Markov-Chain-Model-AoL-AI/
 │
-├── 📓 Advanced_Markov_Chain_Earthquake_Forecasting.ipynb  ⭐ Main notebook
-├── 📄 README.md                                           📖 This documentation
-├── 📄 COMPARISON.md                                       📊 Comparison analysis
-├── 📄 QUICK_REFERENCE.md                                  ⚡ Quick start guide
-├── 📄 requirements.txt                                    📦 Dependencies
-├── 📄 .gitignore                                          🔧 Git configuration
+├── Advanced_Markov_Chain_Earthquake_Forecasting.ipynb    # Main notebook
+├── README.md                                              # This documentation
+├── COMPARISON.md                                          # Comparison analysis
+├── QUICK_REFERENCE.md                                     # Quick start guide
+├── requirements.txt                                       # Dependencies
+├── .gitignore                                             # Git configuration
 │
-├── 📂 data/
-│   ├── indonesia_earthquakes_usgs.csv                     💾 20,000 earthquakes (3.4 MB)
-│   └── transition_matrix_order2.npy                       🧠 Trained model (18.8 MB)
+├── data/
+│   ├── indonesia_earthquakes_usgs.csv                     # 20,000 earthquakes (3.4 MB)
+│   └── transition_matrix_order2.npy                       # Trained model (18.8 MB)
 │
-└── 📂 results/
-    ├── 🖼️ indonesia_earthquake_map.png                     🗺️ Geographic distribution
-    ├── 🖼️ regional_earthquake_analysis.png                 📊 Regional risk (4-panel)
-    ├── 🖼️ temporal_earthquake_analysis.png                 ⏰ Temporal patterns (6-panel)
-    ├── 🖼️ depth_magnitude_analysis.png                     📏 Physical characteristics (4-panel)
-    ├── 🖼️ earthquake_prediction_dashboard.png              🔮 Prediction dashboard (9-panel)
-    ├── 🖼️ transition_matrix_heatmap.png                    🌡️ Model visualization
-    ├── 🖼️ magnitude_distribution.png                       📊 Distribution analysis
-    ├── 🖼️ forecast_comparison.png                          📈 Performance comparison
-    ├── 🖼️ temporal_patterns.png                            🕐 Detailed patterns
-    └── 📄 ieee_paper_report.txt                            📄 Analysis report
+└── results/
+    ├── indonesia_earthquake_map.png                       # Geographic distribution
+    ├── regional_earthquake_analysis.png                   # Regional risk (4-panel)
+    ├── temporal_earthquake_analysis.png                   # Temporal patterns (6-panel)
+    ├── depth_magnitude_analysis.png                       # Physical characteristics (4-panel)
+    ├── earthquake_prediction_dashboard.png                # Prediction dashboard (9-panel)
+    ├── transition_matrix_heatmap.png                      # Model visualization
+    ├── magnitude_distribution.png                         # Distribution analysis
+    ├── forecast_comparison.png                            # Performance comparison
+    ├── temporal_patterns.png                              # Detailed patterns
+    └── ieee_paper_report.txt                              # Analysis report
 ```
 
 ---
 
-## 🔬 Technical Details
+## Technical Details
 
 ### Methodology:
 
@@ -262,7 +272,7 @@ predicted_regions = decode_states(top_k_states)
 
 ---
 
-## 🎓 Academic Contributions
+## Academic Contributions
 
 ### What Makes This Work Unique:
 
@@ -288,7 +298,7 @@ See [COMPARISON.md](COMPARISON.md) for detailed comparison with existing works.
 
 ---
 
-## 📈 Results & Insights
+## Results & Insights
 
 ### Top 3 Most Frequent Earthquake Regions:
 
@@ -324,21 +334,21 @@ See [COMPARISON.md](COMPARISON.md) for detailed comparison with existing works.
 
 ---
 
-## ⚠️ Important Disclaimers
+## Important Disclaimers
 
-🔔 **This is probabilistic forecasting, NOT deterministic prediction**
+**This is probabilistic forecasting, NOT deterministic prediction**
 
 - Cannot predict exact time, location, and magnitude
 - Provides probability estimates based on historical patterns
 - Use for **preparedness**, not for panic
 
-🔔 **Academic & Research Purpose**
+**Academic & Research Purpose**
 
 - System designed for educational and research purposes
 - Not a replacement for official earthquake monitoring agencies
 - Always follow official information from **BMKG Indonesia**
 
-🔔 **Model Limitations**
+**Model Limitations**
 
 - Trained on historical data (2010-2019)
 - Assumes stationary earthquake patterns
@@ -347,31 +357,31 @@ See [COMPARISON.md](COMPARISON.md) for detailed comparison with existing works.
 
 ---
 
-## 📚 For IEEE Paper Submission
+## For IEEE Paper Submission
 
 ### Paper Structure:
 
-✅ **Abstract** - Explained in notebook introduction
-✅ **Introduction** - Indonesia seismic context + Markov Chain rationale  
-✅ **Related Work** - Comparison with existing approaches (see COMPARISON.md)
-✅ **Methodology** - 2nd-order Markov Chain + feature engineering
-✅ **Data** - USGS API, 20,000 earthquakes, 2010-2019
-✅ **Experiments** - Train/test split, baseline comparison
-✅ **Results** - 10 figures + comprehensive analysis
-✅ **Discussion** - Model performance, limitations, future work
-✅ **Conclusion** - Probabilistic forecasting is viable for earthquake prediction
-✅ **References** - Susilo et al. (2018), Gutenberg-Richter (1944), USGS standards
+- **Abstract** - Explained in notebook introduction
+- **Introduction** - Indonesia seismic context + Markov Chain rationale  
+- **Related Work** - Comparison with existing approaches (see COMPARISON.md)
+- **Methodology** - 2nd-order Markov Chain + feature engineering
+- **Data** - USGS API, 20,000 earthquakes, 2010-2019
+- **Experiments** - Train/test split, baseline comparison
+- **Results** - 10 figures + comprehensive analysis
+- **Discussion** - Model performance, limitations, future work
+- **Conclusion** - Probabilistic forecasting is viable for earthquake prediction
+- **References** - Susilo et al. (2018), Gutenberg-Richter (1944), USGS standards
 
 ### Materials Ready:
 
-- 📊 **10 publication-quality figures** (300 DPI, PNG format)
-- 📝 **1 comprehensive report** (ieee_paper_report.txt)
-- 💻 **Complete reproducible code** (Jupyter notebook)
-- 📈 **Quantitative results** (accuracy, precision, performance metrics)
+- **10 publication-quality figures** (300 DPI, PNG format)
+- **1 comprehensive report** (ieee_paper_report.txt)
+- **Complete reproducible code** (Jupyter notebook)
+- **Quantitative results** (accuracy, precision, performance metrics)
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 Potential enhancements for future versions:
 
@@ -404,7 +414,7 @@ Potential enhancements for future versions:
 
 ---
 
-## 📖 References
+## References
 
 1. **Susilo, A., Guritno, S., & Wijanarto.** (2018). "Earthquake Analysis in East Java, Indonesia Between 1960-2017 Using Markov Chain Model." _IOP Conference Series: Earth and Environmental Science_.
 
@@ -418,7 +428,7 @@ Potential enhancements for future versions:
 
 ---
 
-## 👥 Contributors
+## Contributors
 
 **Dian R** - Bina Nusantara University  
 Course: Artificial Intelligence (Semester 3)  
@@ -426,14 +436,14 @@ Project: Assessment of Learning (AoL) - Earthquake Forecasting
 
 ---
 
-## 📄 License
+## License
 
 This project is for **academic and research purposes** only.  
 Data source: USGS Earthquake Catalog (Public Domain)
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **USGS** for providing comprehensive earthquake data
 - **BMKG Indonesia** for earthquake monitoring and awareness
@@ -442,41 +452,48 @@ Data source: USGS Earthquake Catalog (Public Domain)
 
 ---
 
-## ❓ Frequently Asked Questions (FAQ)
+## Frequently Asked Questions (FAQ)
 
 ### Q1: Can this predict the exact time and location of an earthquake?
+
 **A:** No. This system provides **probabilistic forecasting**, not deterministic prediction. It estimates the likelihood of earthquakes in different regions based on historical patterns.
 
 ### Q2: How accurate is the prediction?
+
 **A:** The model achieves:
+
 - 23.5% accuracy for 1-day window
 - 100% accuracy for 5-10 day window (earthquake will occur somewhere in Indonesia)
 
 ### Q3: Can I use this for real-world disaster preparedness?
+
 **A:** This is an **academic research project**. Always rely on official sources like **BMKG Indonesia** for earthquake warnings. Use this system for research and educational purposes only.
 
 ### Q4: Why 2nd-order Markov Chain?
+
 **A:** 2nd-order considers the last 2 earthquakes, capturing more complex patterns than 1st-order (which only looks at current state). It balances accuracy with computational efficiency.
 
 ### Q5: Can I modify the code for other countries?
+
 **A:** Yes! Simply change the region parameter in the USGS API call. The code is modular and can be adapted for any seismically active region.
 
 ### Q6: How long does it take to run?
+
 **A:** Complete execution takes **2-3 minutes** on a standard laptop (Intel i5, 8GB RAM).
 
 ---
 
-## 📞 Contact & Repository
+## Contact & Repository
 
-🔗 **GitHub Repository:** [Indonesian-Earthquake-Markov-Chain-Model-AoL-AI](https://github.com/ddrlve/Indonesian-Earthquake-Markov-Chain-Model-AoL-AI)
+**GitHub Repository:** [Indonesian-Earthquake-Markov-Chain-Model-AoL-AI](https://github.com/ddrlve/Indonesian-Earthquake-Markov-Chain-Model-AoL-AI)
 
-📧 **Contact:** For questions or collaboration opportunities  
-🎓 **Institution:** Bina Nusantara University  
-📚 **Course:** Artificial Intelligence (Semester 3)
+**Contact:** For questions or collaboration opportunities  
+**Institution:** Bina Nusantara University  
+**Course:** Artificial Intelligence (Semester 3)
 
 ---
 
-**⭐ If you find this project useful for your research, please consider citing it!**
+**If you find this project useful for your research, please consider citing it:**
 
 ```bibtex
 @misc{earthquake_forecasting_indonesia_2024,
@@ -492,7 +509,7 @@ Data source: USGS Earthquake Catalog (Public Domain)
 
 <div align="center">
 
-**🇮🇩 Prepared for Disaster, Protected by Science 🇮🇩**
+**Prepared for Disaster, Protected by Science**
 
 _Using AI and Historical Data to Improve Earthquake Preparedness in Indonesia_
 
