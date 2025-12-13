@@ -32,6 +32,7 @@ jupyter notebook Advanced_Markov_Chain_Earthquake_Forecasting.ipynb
 - All predictions and visualizations will be generated automatically!
 
 **What you'll get:**
+
 - ✅ 10+ high-resolution visualizations (300 DPI)
 - ✅ Earthquake predictions with probability scores
 - ✅ Comprehensive analysis report
@@ -318,18 +319,21 @@ See [COMPARISON.md](COMPARISON.md) for detailed comparison with existing works.
 ### Model Prediction vs Actual Test Data:
 
 **What the model predicted:**
+
 - **Top Region:** Sumatera Utara (40% probability)
 - **2nd Region:** Bali/NTB/NTT (20% probability)
 - **3rd Region:** Jawa Barat (20% probability)
 - **Most Likely Magnitude:** M 4.0-4.5 (60%)
 
 **What actually happened in test set (4,000 earthquakes):**
+
 - **Top Region:** Sumatera Utara (3 out of 10 first earthquakes = 30%) ✅ **MATCH!**
 - **2nd Region:** Maluku (20%)
 - **3rd Region:** Bali/NTB/NTT (20%) ✅ **MATCH!**
 - **Actual Magnitude:** M 4.0-4.5 (50%) ✅ **MATCH!**
 
 **Validation Details:**
+
 - 📅 First test earthquake: 16 June 2017, Sumatera Utara, M 4.1
 - 📅 Test period: June 2017 - January 2019
 - ✅ Model correctly predicted Sumatera Utara as highest risk region
@@ -514,14 +518,16 @@ Data source: USGS Earthquake Catalog (Public Domain)
 
 ### Q1: Can this predict the exact time and location of an earthquake?
 
-**A:** No. This system provides **probabilistic forecasting**, not deterministic prediction. 
+**A:** No. This system provides **probabilistic forecasting**, not deterministic prediction.
 
 **What it CAN do:**
+
 - ✅ Identify regions with **higher probability** of earthquakes (e.g., "40% chance in Sumatera Utara")
 - ✅ Estimate **time windows** when earthquakes are more likely (e.g., "within 10 days")
 - ✅ Predict **magnitude ranges** most probable (e.g., "M 4.0-4.5 at 60%")
 
 **What it CANNOT do:**
+
 - ❌ Cannot say "Earthquake will occur at exactly 3 PM tomorrow"
 - ❌ Cannot pinpoint exact coordinates (only broad regions)
 - ❌ Cannot guarantee 100% certainty (only probability scores)
