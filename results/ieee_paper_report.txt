@@ -1,0 +1,57 @@
+================================================================================
+PROBABILISTIC EARTHQUAKE FORECASTING USING MARKOV CHAIN
+Advanced Multi-Feature Model for Indonesian Earthquakes
+================================================================================
+
+1. DATASET SUMMARY
+--------------------------------------------------------------------------------
+Total Events: 20,000
+Date Range: 2010-01-01 04:42:53.630000+00:00 to 2019-01-17 06:05:41.380000+00:00
+Magnitude Range: 4.0 - 8.6
+Depth Range: 0.0 - 673.1 km
+Geographic Coverage: Indonesia (-11.98°S - 6.00°N)
+
+2. MODEL CONFIGURATION
+--------------------------------------------------------------------------------
+Markov Chain Order: 2
+State Space Dimensions:
+  - Magnitude bins: 5
+  - Depth bins: 3
+  - Regional zones: 9
+Total States: 135
+
+3. VALIDATION SETUP
+--------------------------------------------------------------------------------
+Training Set: 16,000 events (80.0%)
+Test Set: 4,000 events (20.0%)
+Baseline Model: Stationary Poisson Process
+  Mean Rate: 5.87 events/day
+
+4. FORECAST RESULTS (M≥5.5)
+--------------------------------------------------------------------------------
+Forecast Window: 1 days
+  Baseline (Poisson): 0.9972
+  Markov Chain:       0.2353
+  Actual Occurrence:  Yes
+
+Forecast Window: 5 days
+  Baseline (Poisson): 1.0000
+  Markov Chain:       1.0000
+  Actual Occurrence:  Yes
+
+Forecast Window: 10 days
+  Baseline (Poisson): 1.0000
+  Markov Chain:       1.0000
+  Actual Occurrence:  Yes
+
+5. GENERATED FILES
+--------------------------------------------------------------------------------
+Data Files:
+  - indonesia_earthquakes_usgs.csv
+  - transition_matrix_order2.npy
+
+Figures (300 DPI):
+  - transition_matrix_heatmap.png
+  - magnitude_distribution.png
+  - forecast_comparison.png
+  - temporal_patterns.png

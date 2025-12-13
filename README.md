@@ -1,169 +1,101 @@
-# Indonesian Earthquake Markov Chain Model
+﻿#  Indonesian Earthquake Forecasting using Advanced Markov Chain
 
-A comprehensive Python implementation of a discrete-time Markov Chain model for analyzing earthquake patterns in Indonesia using the Kaggle earthquake dataset.
-
-## 📊 Project Overview
-
-This project implements a first-order Markov Chain to model earthquake state transitions in Indonesia, providing insights into seismic sequence patterns and earthquake occurrence probabilities.
-
-### 🎯 Key Features
-
-- **Magnitude-based State Classification**: Small (<4.0), Medium (4.0-6.0), Large (≥6.0)
-- **Geographic Region Integration**: 9 regional zones covering Indonesian archipelago
-- **Multi-step Transition Analysis**: Compute n-step transition probabilities
-- **Comprehensive Statistical Analysis**: State persistence, steady-state distributions
-- **Synthetic Data Testing**: Built-in demo with realistic earthquake patterns
-
-## 🔬 Methodology
-
-### State Definition
-1. **Magnitude-only states**: Three categories based on earthquake magnitude
-2. **Combined states**: Magnitude + geographical regions for spatial analysis
-
-### Geographic Binning
-- **Latitude bins**: [-12, -6, 0, 6] (Southern, Central, Northern regions)
-- **Longitude bins**: [90, 110, 130, 150] (Western, Central, Eastern regions)
-- **Total regions**: 9 distinct geographical zones
-
-### Analysis Components
-- Transition count matrices
-- Transition probability matrices
-- N-step transition calculations (2, 5, 10 steps)
-- Steady-state distribution analysis
-- State persistence evaluation
-
-## 📁 Dataset
-
-**Source**: [Indonesian Earthquakes Dataset](https://www.kaggle.com/datasets/kekavigi/earthquakes-in-indonesia)
-
-**Format**: TSV (Tab-separated values)
-
-**Key Columns**:
-- `tgl`: Event date
-- `ot`: Origin time
-- `lat`: Latitude
-- `lon`: Longitude
-- `mag`: Magnitude
-- `depth`: Hypocenter depth
-
-## 🚀 Quick Start
-
-### Prerequisites
-```bash
-pip install pandas numpy jupyter
-```
-
-### Usage
-1. Download the dataset from Kaggle
-2. Update the `DATA_PATH` variable in cell 4
-3. Run all cells in sequence
-4. Execute `results = main()` to perform full analysis
-
-### Demo Mode
-Run the synthetic data demo without downloading the dataset:
-```python
-demo_results = run_demo()
-```
-
-## 📈 Sample Results
-
-### Transition Probabilities (Demo Data)
-```
-         Large  Medium   Small
-Large   0.1379  0.4138  0.4483
-Medium  0.0403  0.2500  0.7097
-Small   0.0607  0.2341  0.7052
-```
-
-### Key Insights
-- **Small earthquakes dominate**: ~69% of events
-- **High persistence**: P(Small→Small) = 70.5%
-- **Large to small tendency**: Large earthquakes often followed by smaller ones
-- **Quick convergence**: Steady-state reached within 5 steps
-
-## 🛠️ Model Architecture
-
-### Core Functions
-- `assign_magnitude_state()`: Classify earthquakes by magnitude
-- `assign_region_state()`: Geographic binning
-- `compute_transition_matrix()`: Build Markov chain
-- `n_step_transition_matrix()`: Multi-step analysis
-- `analyze_markov_chain()`: Comprehensive evaluation
-
-### Additional Utilities
-- `save_results_to_file()`: Export analysis results
-- `compute_steady_state()`: Long-term distribution
-- `analyze_steady_state()`: Equilibrium analysis
-
-## 🎓 Educational Applications
-
-### Seismology Research
-- Understanding earthquake sequence patterns
-- Baseline for complex models (HMM, PSHA)
-- Statistical seismology education
-
-### Data Science Learning
-- Markov chain implementation
-- Time series state modeling
-- Scientific data preprocessing
-
-## ⚠️ Model Limitations
-
-### Assumptions
-1. **First-order Markov property**: Next state depends only on current state
-2. **Time-homogeneous**: Constant transition probabilities
-3. **Discrete states**: Finite earthquake categories
-4. **Sequential dependence**: Event order matters
-
-### Limitations
-1. **No temporal spacing**: Time between events not modeled
-2. **Coarse spatial resolution**: Limited regional binning
-3. **No "quiet" periods**: Only event-to-event transitions
-4. **Stationarity assumption**: May not capture long-term changes
-5. **Historical data dependency**: Limited by available records
-
-## 📚 Technical Implementation
-
-### Dependencies
-- **pandas**: Data manipulation and analysis
-- **numpy**: Numerical computations and matrix operations
-- **datetime**: Timestamp processing
-
-### Performance
-- **Memory efficient**: Optimized for large datasets
-- **Scalable**: Handles thousands of earthquake events
-- **Robust**: Error handling and data validation
-
-## 🔮 Future Enhancements
-
-### Model Extensions
-- Higher-order Markov chains (2nd, 3rd order)
-- Hidden Markov Models (HMM) integration
-- Temporal spacing incorporation
-- Continuous state spaces
-
-### Analysis Features
-- Spatial clustering algorithms
-- Seasonal pattern detection
-- Uncertainty quantification
-- Cross-validation framework
-
-## 📄 License
-
-This project is developed for educational purposes as part of the AI coursework at Bina Nusantara University.
-
-## 👨‍💻 Author
-
-**Course**: Artificial Intelligence (AI) - Semester 3  
-**Institution**: Bina Nusantara University  
-**Project Type**: Assessment of Learning (AoL)
-
-## 🙏 Acknowledgments
-
-- **Kaggle** for providing the Indonesian earthquake dataset
-- **BMKG** (Indonesian Meteorological, Climatological, and Geophysical Agency) for earthquake monitoring
-- **Seismology research community** for methodological foundations
+**Probabilistic Earthquake Forecasting Using Markov Chain Models**  
+*IEEE Paper Research Project - Assessment of Learning (AoL) AI*
 
 ---
 
-*For detailed implementation and usage instructions, please refer to the Jupyter notebook: `test.ipynb`*
+##  Overview
+
+Advanced earthquake forecasting system for Indonesia using **2nd-order Multi-Feature Markov Chain** model. This project implements probabilistic forecasting to predict earthquake probabilities across magnitude, depth, and spatial dimensions.
+
+### Key Features
+-  **2nd-Order Markov Chain** - considers 2 previous events for better accuracy
+-  **Multi-Dimensional States** - magnitude (5 bins)  depth (3 bins)  region (9 zones) = 135 states
+-  **Comprehensive Data** - USGS earthquake catalog (2010-2024, M4.0)
+-  **Advanced Features** - inter-event time, spatial distance, seismic energy, b-value
+-  **Validated Forecasts** - train/test split with baseline comparison
+-  **IEEE Paper Ready** - automated report and publication-quality figures
+
+---
+
+##  Quick Start
+
+### Prerequisites
+```powershell
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Run Full Pipeline
+```powershell
+# Execute complete workflow (5-10 minutes)
+python run_full_pipeline.py
+```
+
+### Or Run Step-by-Step
+```powershell
+# Step 1: Download data from USGS
+python 1_download_earthquake_data.py
+
+# Step 2: Build and train model
+python 2_advanced_markov_model.py
+
+# Step 3: Evaluate and visualize
+python 3_evaluate_and_visualize.py
+```
+
+---
+
+##  Generated Outputs
+
+After running the pipeline, you'll have:
+
+###  Data Files
+- indonesia_earthquakes_usgs.csv - Raw USGS earthquake data
+- processed_earthquake_data.csv - Feature-engineered dataset
+- data_statistics.txt - Dataset summary statistics
+
+###  Model Files
+- 	ransition_matrix_order2.npy - Trained 2nd-order transition matrix
+
+###  Results (IEEE Paper)
+- ieee_paper_report.txt - Comprehensive analysis report
+- 	ransition_matrix_heatmap.png - Transition probability visualization
+- magnitude_distribution.png - Training vs test comparison
+- orecast_comparison.png - Markov vs baseline performance
+- 	emporal_patterns.png - Temporal analysis plots
+
+---
+
+##  Model Performance
+
+The model provides probabilistic forecasts:
+- **1-day forecast:** P(M5.5 in next 24 hours)
+- **5-day forecast:** P(M5.5 in next 5 days)  
+- **10-day forecast:** P(M5.5 in next 10 days)
+
+Validated against baseline Poisson model with 80/20 train/test split.
+
+---
+
+##  References
+
+**Key Paper:**  
+Susilo, A. et al. (2018). "Earthquake Analysis in East Java, Indonesia Between 1960-2017 Using Markov Chain Model"
+
+**Data Source:**  
+USGS Earthquake Hazards Program - https://earthquake.usgs.gov/
+
+---
+
+##  Academic Info
+
+**Institution:** Bina Nusantara University  
+**Course:** Artificial Intelligence (Semester 3)  
+**Assessment:** Assessment of Learning (AoL)  
+**Paper Title:** "Probabilistic Earthquake Forecasting Using Hidden Markov Models"
+
+---
+
+ **Ready to generate results for your IEEE paper!**
