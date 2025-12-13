@@ -47,11 +47,11 @@ Forecast Window: 10 days
 5. GENERATED FILES
 --------------------------------------------------------------------------------
 Data Files:
-  - indonesia_earthquakes_usgs.csv
-  - transition_matrix_order2.npy
+  - data/indonesia_earthquakes_usgs.csv
+  - data/transition_matrix_order2.npy
 
 Figures (300 DPI):
-  - transition_matrix_heatmap.png
-  - magnitude_distribution.png
-  - forecast_comparison.png
-  - temporal_patterns.png
+  - results/transition_matrix_heatmap.png
+  - results/magnitude_distribution.png
+  - results/forecast_comparison.png
+  - results/temporal_patterns.png
