@@ -53,14 +53,14 @@ jupyter notebook Advanced_Markov_Chain_Earthquake_Forecasting.ipynb
 
 ### Core Capabilities:
 
-| Feature               | Description                           | Output                           |
-| --------------------- | ------------------------------------- | -------------------------------- |
-| **Prediction**        | Forecasts next earthquake             | Location, magnitude, probability |
-| **Geographic Analysis** | Maps 20,000+ earthquakes            | Heat map visualization           |
-| **Regional Risk**     | Identifies dangerous regions          | Risk index & rankings            |
-| **Temporal Patterns** | Analyzes when earthquakes occur       | Yearly, monthly, daily, hourly   |
-| **Physical Analysis** | Studies magnitude-depth relationships | Gutenberg-Richter law            |
-| **Dashboard**         | Interactive prediction visualization  | 9-panel comprehensive view       |
+| Feature                 | Description                           | Output                           |
+| ----------------------- | ------------------------------------- | -------------------------------- |
+| **Prediction**          | Forecasts next earthquake             | Location, magnitude, probability |
+| **Geographic Analysis** | Maps 20,000+ earthquakes              | Heat map visualization           |
+| **Regional Risk**       | Identifies dangerous regions          | Risk index & rankings            |
+| **Temporal Patterns**   | Analyzes when earthquakes occur       | Yearly, monthly, daily, hourly   |
+| **Physical Analysis**   | Studies magnitude-depth relationships | Gutenberg-Richter law            |
+| **Dashboard**           | Interactive prediction visualization  | 9-panel comprehensive view       |
 
 ### Key Features:
 
@@ -362,7 +362,7 @@ See [COMPARISON.md](COMPARISON.md) for detailed comparison with existing works.
 ### Paper Structure:
 
 - **Abstract** - Explained in notebook introduction
-- **Introduction** - Indonesia seismic context + Markov Chain rationale  
+- **Introduction** - Indonesia seismic context + Markov Chain rationale
 - **Related Work** - Comparison with existing approaches (see COMPARISON.md)
 - **Methodology** - 2nd-order Markov Chain + feature engineering
 - **Data** - USGS API, 20,000 earthquakes, 2010-2019
