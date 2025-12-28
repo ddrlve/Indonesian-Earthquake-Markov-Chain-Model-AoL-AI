@@ -1,0 +1,11 @@
+rank,probability,magnitude_range,depth_category,region
+1,17.58%,M4.0-4.5,Shallow,Maluku
+2,8.39%,M4.5-5.0,Shallow,Maluku
+3,5.48%,nan,Shallow,Maluku
+4,5.16%,M4.0-4.5,Intermediate,Maluku
+5,4.03%,M4.0-4.5,Shallow,Papua
+6,2.58%,M4.5-5.0,Intermediate,Maluku
+7,2.42%,M4.0-4.5,Shallow,Sulawesi
+8,2.42%,M4.0-4.5,Deep,Maluku
+9,1.94%,M5.0-5.5,Shallow,Maluku
+10,1.94%,M4.0-4.5,Shallow,Jawa Barat

@@ -1,0 +1,4 @@
+Model,States,Transitions,Chi2 Statistic,P-value,Markov Property
+Spatial,9,30331,8213.74,0.0000,Yes
+Magnitude,3,30331,7859.10,0.0000,Yes
+Temporal,2,15,N/A,N/A,N/A
